@@ -16,6 +16,10 @@
 		AC49563F1D2066CD00EA973A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC49563D1D2066CD00EA973A /* LaunchScreen.storyboard */; };
 		AC49564A1D2066CD00EA973A /* Loc_FinalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4956491D2066CD00EA973A /* Loc_FinalTests.m */; };
 		AC4956551D2066CD00EA973A /* Loc_FinalUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4956541D2066CD00EA973A /* Loc_FinalUITests.m */; };
+		AC4956631D2066E600EA973A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC4956621D2066E600EA973A /* MapKit.framework */; };
+		AC4956651D2066ED00EA973A /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AC4956641D2066ED00EA973A /* libsqlite3.0.tbd */; };
+		AC4956681D20676D00EA973A /* databaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4956671D20676D00EA973A /* databaseObject.m */; };
+		AC49566B1D2067FC00EA973A /* locationDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC49566A1D2067FC00EA973A /* locationDisplayViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +58,12 @@
 		AC4956501D2066CD00EA973A /* Loc-FinalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Loc-FinalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC4956541D2066CD00EA973A /* Loc_FinalUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Loc_FinalUITests.m; sourceTree = "<group>"; };
 		AC4956561D2066CD00EA973A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC4956621D2066E600EA973A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		AC4956641D2066ED00EA973A /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		AC4956661D20676D00EA973A /* databaseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = databaseObject.h; path = ../databaseObject.h; sourceTree = "<group>"; };
+		AC4956671D20676D00EA973A /* databaseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = databaseObject.m; path = ../databaseObject.m; sourceTree = "<group>"; };
+		AC4956691D2067FC00EA973A /* locationDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = locationDisplayViewController.h; sourceTree = "<group>"; };
+		AC49566A1D2067FC00EA973A /* locationDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = locationDisplayViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC4956651D2066ED00EA973A /* libsqlite3.0.tbd in Frameworks */,
+				AC4956631D2066E600EA973A /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +96,8 @@
 		AC4956201D2066CD00EA973A = {
 			isa = PBXGroup;
 			children = (
+				AC4956641D2066ED00EA973A /* libsqlite3.0.tbd */,
+				AC4956621D2066E600EA973A /* MapKit.framework */,
 				AC49562B1D2066CD00EA973A /* Loc-Final */,
 				AC4956481D2066CD00EA973A /* Loc-FinalTests */,
 				AC4956531D2066CD00EA973A /* Loc-FinalUITests */,
@@ -108,8 +122,12 @@
 				AC4956301D2066CD00EA973A /* AppDelegate.m */,
 				AC4956321D2066CD00EA973A /* FirstViewController.h */,
 				AC4956331D2066CD00EA973A /* FirstViewController.m */,
+				AC4956661D20676D00EA973A /* databaseObject.h */,
+				AC4956671D20676D00EA973A /* databaseObject.m */,
 				AC4956351D2066CD00EA973A /* SecondViewController.h */,
 				AC4956361D2066CD00EA973A /* SecondViewController.m */,
+				AC4956691D2067FC00EA973A /* locationDisplayViewController.h */,
+				AC49566A1D2067FC00EA973A /* locationDisplayViewController.m */,
 				AC4956381D2066CD00EA973A /* Main.storyboard */,
 				AC49563B1D2066CD00EA973A /* Assets.xcassets */,
 				AC49563D1D2066CD00EA973A /* LaunchScreen.storyboard */,
@@ -276,8 +294,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC4956371D2066CD00EA973A /* SecondViewController.m in Sources */,
+				AC4956681D20676D00EA973A /* databaseObject.m in Sources */,
 				AC4956311D2066CD00EA973A /* AppDelegate.m in Sources */,
 				AC4956341D2066CD00EA973A /* FirstViewController.m in Sources */,
+				AC49566B1D2067FC00EA973A /* locationDisplayViewController.m in Sources */,
 				AC49562E1D2066CD00EA973A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
